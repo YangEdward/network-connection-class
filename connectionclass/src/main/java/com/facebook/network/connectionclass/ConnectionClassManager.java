@@ -89,7 +89,7 @@ public class ConnectionClassManager {
 
     //Ignore garbage values.
     if (timeInMs == 0 || (bytes) * 1.0 / (timeInMs) * BYTES_TO_BITS < BANDWIDTH_LOWER_BOUND) {
-      return;
+        return;
     }
 
     double bandwidth = (bytes) * 1.0 / (timeInMs) * BYTES_TO_BITS;
